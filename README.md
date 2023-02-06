@@ -24,6 +24,7 @@ You will need the following things before beginning:
 * SnowSQL
     * **SnowSQL installed on your computer**. Go to the [SnowSQL Download page](https://developers.snowflake.com/snowsql/) and see the [Installing SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-install-config.html) page for more details.
     * Create a SnowSQL configuration for this lab by adding the following section to your `~/.snowsql/config` file (replacing the account, username, and password with your values):
+    * **Note:** this will not work with key pair at this time, these are the required parameters for [utils/snowpark_utils.py](utils/snowpark_utils.py)
 
         ```
         [connections.dev]
@@ -50,7 +51,7 @@ You will need the following things before beginning:
         ```
 
 # Running the Demo
-Here are a few tips/ticks for running the demo:
+Here are a few tips/ticks for running the demo; which is run from the QuickStart linked above:
 
 * For each Python step, run the script through a terminal
     * For best results, open a terminal in VS Code
