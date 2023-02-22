@@ -9,12 +9,10 @@
 # SNOWFLAKE ADVANTAGE: Python UDFs (with third-party packages)
 # SNOWFLAKE ADVANTAGE: SnowCLI (PuPr)
 
-from scipy.constants import convert_temperature
 import sys
 
-
 def main(temp_f: float) -> float:
-    return convert_temperature(float(temp_f), 'F', 'C')
+    return (float(temp_f) - 32) * (5/9)
 
 
 # For local debugging
